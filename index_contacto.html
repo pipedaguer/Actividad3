@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AFDP AUTOS RENT</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+        body {
+            background-blend-mode: screen;
+            background:
+                linear-gradient(limegreen,
+                    transparent),
+                linear-gradient(90deg,
+                    skyblue,
+                    transparent),
+                linear-gradient(-90deg,
+                    coral,
+                    transparent);
+        }
+
+        footer {
+            background-color: #343a40;
+            color: yellow;
+            margin-top: auto;
+        }
+
+        .parrafo {
+            text-align: center;
+            margin-bottom: auto;
+            margin: 10px;
+        }
+
+        .contact_form {
+            margin: auto;
+            width: 460px;
+            height: 1017px;
+            margin: auto;
+            border-radius: 40px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 28px;
+            background-image: url('img/img3.png');
+            background-repeat: no-repeat;
+        }
+
+
+        input {
+            align-items: center;
+            background-color: #e1e1e1fb;
+            width: 408px;
+            height: 40px;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #000000;
+            margin-top: 10px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        textarea {
+            background-color: #fbfbfb;
+            width: 405px;
+            height: 150px;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #000000;
+            margin-top: 10px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+            padding-top: 15px;
+        }
+
+
+        label {
+            display: block;
+            font-size: 20px;
+            font-weight: bold;
+            float: center;
+            color: #FFFFFF;
+        }
+
+
+        #enviar {
+            height: 45px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            text-transform: uppercase;
+            background-color: #0D783A;
+            border-color: #000000;
+            border-style: solid;
+            border-radius: 10px;
+            width: 405px;
+            cursor: pointer;
+        }
+
+
+        #enviar {
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+
+
+        span {
+            color: #FFFFFF;
+            font-size: 20px;
+        }
+
+
+        .aviso {
+            font-size: 13px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+
+        .h1 {
+            font-size: 60px;
+            text-align: center;
+            padding-bottom: 0px;
+            color: #FFFFFF;
+        }
+
+
+        .h3 {
+            font-size: 20px;
+            padding-bottom: 10px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .colocar_asunto {
+            color: #FFFDFD;
+            font-weight: bold;
+        }
+
+        .aviso {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .p {
+            font-size: 14px;
+            color: #FFFFFF;
+        }
+
+        .pi {
+            text-align: center;
+            margin-bottom: auto;
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+
+
+        ::-webkit-input-placeholder {
+            color: #a8a8a8;
+        }
+
+
+        ::-webkit-textarea-placeholder {
+            color: #a8a8a8;
+        }
+
+
+        .formulario input:focus {
+            outline: 0;
+            border: 1px solid #000000;
+        }
+
+
+        .formulario textarea:focus {
+            outline: 0;
+            border: 1px solid #000000;
+        }
+
+
+        /* creado por javiniguez.com, Julio 2019 */
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">AFDP</a>
+        <div class="container">
+            <!--<a class="navbar-brand" href="#">AFDP</a>-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">INICIO <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERVICIOS</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="index_mantenimiento.html">Mantenimiento</a>
+                            <a class="dropdown-item" href="index_montallantas.html">Montallantas</a>
+                            <a class="dropdown-item" href="index_balanceo.html">Balanceo</a>
+                            <a class="dropdown-item" href="index_alineacion.html">Alineación</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index_contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <hr>
+    <!-- formulario de contacto en html y css -->
+
+    <div class="contact_form">
+
+        <div class="formulario">
+            <h1 class="h1">CONTACTO</h1>
+            <h3 class="h3">Contactanos para brindarte información</h3>
+
+            <form action="submeter-formulario.php" method="post">
+                <p class="p">
+                    <label for="nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                        placeholder="Escribe tu nombre">
+                </p>
+
+                <p class="p">
+                    <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio"
+                        placeholder="Escribe tu Email">
+                </p>
+
+                <p class="p">
+                    <label for="telefone" class="colocar_telefono">Teléfono
+                    </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>
+
+
+                <p class="p">
+                    <label for="asunto" class="colocar_asunto">Asunto
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                        placeholder="Escribe un asunto">
+                </p>
+
+                <p class="p">
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                        placeholder="Escribir..."></textarea>
+                </p>
+
+                <button type="submit" name="enviar_formulario" id="enviar">
+                    <p class="pi">Enviar</p>
+                </button>
+
+
+                <p class="aviso">
+                    <span class="obligatorio"> * </span>Los campos son obligatorios.
+                </p>
+
+            </form>
+        </div>
+    </div>
+    <hr>
+
+
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="parrafo">Copyright © AFDP. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+</body>
+
+</html>
